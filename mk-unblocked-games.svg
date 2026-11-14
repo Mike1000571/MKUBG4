@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="Poppins, Inter, system-ui, sans-serif" xmlns:c2pa="http://c2pa.org/manifest">
+<title>MK Unblocked Games</title>
+<defs>
+<linearGradient id="cardbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#262626"/><stop offset="1" stop-color="#111"/></linearGradient>
+<linearGradient id="shade" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".85"/><stop offset="0.5" stop-color="#000" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1440" height="900" fill="#0a0a0a"/>
+<g transform="translate(1372 24)">
+<circle cx="23" cy="23" r="23" fill="#0e0e0e" fill-opacity=".88" stroke="#fff" stroke-opacity=".14"/>
+<g transform="translate(11 11)" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></g>
+</g>
+<rect x="582" y="34" width="276" height="48" rx="24" fill="#0c0c0c" fill-opacity=".82" stroke="#fff" stroke-opacity=".1"/>
+<rect x="587" y="39" width="136" height="38" rx="19" fill="#fff"/>
+<text x="655" y="63" text-anchor="middle" font-size="13.6" font-weight="600" fill="#000">games</text>
+<text x="791" y="63" text-anchor="middle" font-size="13.6" font-weight="600" fill="#fff" fill-opacity=".65">apps</text>
+<text x="720" y="148" text-anchor="middle" font-size="23" font-weight="700" fill="#fff">loaded 118 games</text>
+<rect x="440" y="170" width="560" height="48" rx="24" fill="#0e0e0e" fill-opacity=".88" stroke="#fff" stroke-opacity=".1"/>
+<g fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"><circle cx="466" cy="190" r="5.5"/><line x1="470" y1="194" x2="474" y2="198"/></g>
+<text x="720" y="199" text-anchor="middle" font-size="14.4" font-weight="500" fill="#fff" fill-opacity=".4">search games...</text>
+
+<g>
+<rect x="40" y="254" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="170.5" y="345.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">1</text>
+<rect x="40" y="254" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="170.5" y="403" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">1v1.lol</text>
+</g>
+<g>
+<rect x="315" y="254" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="445.5" y="345.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">1R</text>
+<rect x="315" y="254" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="445.5" y="403" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">1v1.lol Reloaded</text>
+</g>
+<g>
+<rect x="590" y="254" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="720.5" y="345.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">S</text>
+<rect x="590" y="254" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="720.5" y="403" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Slope</text>
+</g>
+<g>
+<rect x="865" y="254" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="995.5" y="345.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">R3</text>
+<rect x="865" y="254" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="995.5" y="403" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Run 3</text>
+</g>
+<g>
+<rect x="1140" y="254" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="1270.5" y="345.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">BB</text>
+<rect x="1140" y="254" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="1270.5" y="403" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Baseball Bros</text>
+</g>
+<g>
+<rect x="40" y="431" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="170.5" y="522.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">KB</text>
+<rect x="40" y="431" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="170.5" y="580" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Karate Bros</text>
+</g>
+<g>
+<rect x="315" y="431" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="445.5" y="522.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">FB</text>
+<rect x="315" y="431" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="445.5" y="580" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Football Bros</text>
+</g>
+<g>
+<rect x="590" y="431" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="720.5" y="522.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">SB</text>
+<rect x="590" y="431" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="720.5" y="580" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Soccer Bros</text>
+</g>
+<g>
+<rect x="865" y="431" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="995.5" y="522.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">BB</text>
+<rect x="865" y="431" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="995.5" y="580" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Basket Bros</text>
+</g>
+<g>
+<rect x="1140" y="431" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="1270.5" y="522.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">T</text>
+<rect x="1140" y="431" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="1270.5" y="580" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Tag</text>
+</g>
+<g>
+<rect x="40" y="608" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="170.5" y="699.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">1M</text>
+<rect x="40" y="608" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="170.5" y="757" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">10 Minutes Till Dawn</text>
+</g>
+<g>
+<rect x="315" y="608" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="445.5" y="699.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">BR</text>
+<rect x="315" y="608" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="445.5" y="757" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Basket Random</text>
+</g>
+<g>
+<rect x="590" y="608" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="720.5" y="699.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">B</text>
+<rect x="590" y="608" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="720.5" y="757" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Bitlife</text>
+</g>
+<g>
+<rect x="865" y="608" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="995.5" y="699.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">DJ</text>
+<rect x="865" y="608" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="995.5" y="757" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Draw Joust</text>
+</g>
+<g>
+<rect x="1140" y="608" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="1270.5" y="699.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">GB</text>
+<rect x="1140" y="608" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="1270.5" y="757" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Google Baseball</text>
+</g>
+<g>
+<rect x="40" y="785" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="170.5" y="876.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">G</text>
+<rect x="40" y="785" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="170.5" y="934" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Growden</text>
+</g>
+<g>
+<rect x="315" y="785" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="445.5" y="876.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">R</text>
+<rect x="315" y="785" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="445.5" y="934" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Raft</text>
+</g>
+<g>
+<rect x="590" y="785" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="720.5" y="876.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">ER</text>
+<rect x="590" y="785" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="720.5" y="934" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Escape Road 2</text>
+</g>
+<g>
+<rect x="865" y="785" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="995.5" y="876.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">R2</text>
+<rect x="865" y="785" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="995.5" y="934" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Rl 2d</text>
+</g>
+<g>
+<rect x="1140" y="785" width="261" height="163" rx="16" fill="url(#cardbg)" stroke="#fff" stroke-opacity=".1"/>
+<text x="1270.5" y="876.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="2" fill="#fff" fill-opacity=".2">T</text>
+<rect x="1140" y="785" width="261" height="163" rx="16" fill="url(#shade)"/>
+<text x="1270.5" y="934" text-anchor="middle" font-size="12.8" font-weight="700" fill="#fff">Terraria</text>
+</g>
+<g id="leaves">
+<g transform="translate(621 105) rotate(202 12.5 12.5) scale(1.042)" opacity=".65"><path fill="#b91c1c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(184 68) rotate(10 11.0 11.0) scale(0.917)" opacity=".65"><path fill="#b91c1c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(592 819) rotate(30 17.5 17.5) scale(1.458)" opacity=".65"><path fill="#c2410c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(1099 368) rotate(141 17.0 17.0) scale(1.417)" opacity=".65"><path fill="#dc2626" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(217 268) rotate(109 11.5 11.5) scale(0.958)" opacity=".65"><path fill="#e8741e" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(533 819) rotate(139 19.0 19.0) scale(1.583)" opacity=".65"><path fill="#c2410c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(634 296) rotate(321 11.5 11.5) scale(0.958)" opacity=".65"><path fill="#dc2626" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(177 620) rotate(172 14.5 14.5) scale(1.208)" opacity=".65"><path fill="#92400e" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(1036 254) rotate(91 15.0 15.0) scale(1.250)" opacity=".65"><path fill="#c2410c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(573 91) rotate(280 16.5 16.5) scale(1.375)" opacity=".65"><path fill="#dc2626" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(14 298) rotate(293 13.5 13.5) scale(1.125)" opacity=".65"><path fill="#92400e" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(1041 199) rotate(211 13.5 13.5) scale(1.125)" opacity=".65"><path fill="#b91c1c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+<g transform="translate(590 441) rotate(231 18.5 18.5) scale(1.542)" opacity=".65"><path fill="#c2410c" d="M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z"/><path d="M12 22 V8 M12 14 L8 11 M12 14 L16 11" stroke="#000" stroke-opacity=".3" stroke-width=".7" fill="none"/></g>
+</g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo1OTU0YzA3NS05YTJiLTQ4MTMtOGViZi1kZDkyM2JmMDQ2MjYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaJfYf8VWKvRlajvCbkYEPCkAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphN2I0YjVmYS03YTAxLTQ3ZjYtYWNjZS05YTZhYjE0NDlhMTdscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo4vMx+FRayNhB/vNP1LiiDQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggGEJL65zu998K+kZMjJRr/u92gXlOzVRda3AE+AqKBQSkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJN3vB5Tw9Ba/B+GYXHlEMkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIMXVdC/J11VTiwc/YXeAAaScT6emZQU7rxKyiZ8nn308ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GUIOZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjU5NTRjMDc1LTlhMmItNDgxMy04ZWJmLWRkOTIzYmYwNDYyNi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjdlMTU0MWNjLWM0YWMtNDRkMi1iZTBiLWExZDU3NTc3NmQ2N3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAYQkvrnO733wr6RkyMlGv+73aBeU7NVF1rcAT4CooFBKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg0b+JosyJt/aS0pLMRk6FzKwTuixKIS6iuwK4+RqqQOSiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg1fSSsgRuxPM6LitGKZ0OmDq78d52eIqGRccoIlYd84Z0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQL4ffTfCTUrPw6a96l21UF8fptmCeDiJAWQt5xMtCz+Xd5QnAZay+tFnHjm5L5gKiME9m/VkNmJhJ7aZCG9aVV4=</c2pa:manifest></metadata></svg>
