@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+<title>MK Unblocked Games</title>
+<foreignObject x="0" y="0" width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml" id="app">
+<style><![CDATA[
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
+  #app { --bg:#0a0a0a; --red:#ffffff; --border:rgba(255,255,255,.14); --muted:rgba(255,255,255,.6); --panel:#141414; --panel2:#1c1c1c; }
+  :where(#app, #app *) { margin:0; padding:0; box-sizaing:border-box; }
+  #app { position:relative; width:100%; height:100%; overflow:hidden; background:var(--bg); color:#fff; font-family:'Poppins','Inter',system-ui,sans-serif; }
+
+  .page { position:absolute; inset:0; z-index:5; overflow-y:auto; overflow-x:hidden; scrollbar-width:thin; scrollbar-color:rgba(255,255,255,.3) transparent; }
+  .empty { grid-column:1/-1; text-align:center; color:var(--muted); font-family:'Space Mono',monospace; font-size:.75rem; letter-spacing:2px; padding:30px; }
+
+  .help { position:absolute; inset:0; z-index:9500; display:none; align-items:flex-start; justify-content:flex-start; padding:80px 20px 20px; background:rgba(0,0,0,.6); }
+  .help.open { display:flex; }
+  #help { justify-content:flex-end; padding-top:84px; }
+  .help-box h3 { font-size:.8rem; letter-spacing:3px; text-transform:uppercase; color:var(--muted); margin:22px 0 4px; }
+  .set-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 0; border-top:1px solid var(--border); font-size:.95rem; font-weight:600; }
+  .set-row small { display:block; margin-top:2px; font-size:.75rem; font-weight:400; color:var(--muted); }
+  .set-row select { background:var(--panel2); border:1px solid rgba(255,255,255,.2); border-radius:10px; color:#fff; font:600 .9rem 'Poppins',sans-serif; padding:8px 12px; outline:none; cursor:pointer; }
+  .switch { position:relative; width:46px; height:26px; flex-shrink:0; }
+  .switch input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; margin:0; z-index:1; }
+  .switch span { position:absolute; inset:0; border-radius:999px; background:#333; transition:background .2s; }
+  .switch span::after { content:''; position:absolute; top:3px; left:3px; width:20px; height:20px; border-radius:50%; background:#fff; transition:transform .2s; }
+  .switch input:checked + span { background:#3ea35a; }
+  .switch input:checked + span::after { transform:translateX(20px); }
+  #app.hide-titles .card-title { display:none; }
+  .help-box { position:relative; width:min(520px,100%); max-height:calc(100% - 100px); overflow-y:auto; background:#0c0c0c; border:1px solid rgba(255,255,255,.3); border-radius:14px; padding:24px 26px; box-shadow:0 0 40px rgba(0,0,0,.7); }
+  .help-box h2 { font-size:1.4rem; letter-spacing:4px; text-transform:uppercase; margin-bottom:14px; }
+  .help-x { position:absolute; top:12px; right:14px; background:none; border:none; color:var(--muted); font-size:1.1rem; cursor:pointer; }
+  .help-x:hover { color:#fff; }
+  details { border-top:1px solid var(--border); padding:12px 0; }
+  summary { cursor:pointer; font-size:1.05rem; font-weight:700; letter-spacing:1px; }
+  details p, details li { margin-top:8px; font-size:.95rem; line-height:1.5; color:rgba(255,255,255,.8); }
+  details ol, details ul { padding-left:20px; }
+  code { font-family:'Space Mono',monospace; font-size:.8rem; background:rgba(255,255,255,.12); padding:1px 5px; border-radius:4px; }
+
+  @media (max-width:1100px) { .grid { grid-template-columns:repeat(4,1fr); } }
+  @media (max-width:850px) { .grid { grid-template-columns:repeat(3,1fr); } }
+
+  .top { position:relative; padding:34px 20px 8px; text-align:center; }
+  .help-btn { width:46px; height:46px; padding:0; cursor:pointer; position:absolute; right:22px; top:24px; z-index:12; display:flex; align-items:center; justify-content:center; border-radius:50%; background:rgba(14,14,14,.88); border:1px solid rgba(255,255,255,.14); transition:transform .3s, border-color .2s; }
+  .help-btn:hover { transform:rotate(60deg); border-color:rgba(255,255,255,.5); }
+  .help-btn svg { width:22px; height:22px; fill:none; stroke:#fff; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+  .tabs { display:inline-flex; gap:4px; padding:5px; background:rgba(12,12,12,.82); border:1px solid rgba(255,255,255,.1); border-radius:999px; }
+  .tabs button { background:none; border:none; padding:9px 24px; border-radius:999px; color:rgba(255,255,255,.65); font:600 .85rem 'Poppins',sans-serif; cursor:pointer; transition:background .2s, color .2s; }
+  .tabs button:hover { color:#fff; }
+  .tabs button.on { background:#fff; color:#000; }
+  .count { margin:26px 0 18px; font:700 1.45rem 'Poppins',sans-serif; letter-spacing:-.3px; text-shadow:0 2px 14px rgba(0,0,0,.7); }
+  .search-wrap { position:relative; width:min(560px,86%); margin:0 auto; }
+  .search-wrap svg { position:absolute; left:18px; top:50%; width:16px; height:16px; margin-top:-8px; fill:none; stroke:rgba(255,255,255,.5); stroke-width:2; stroke-linecap:round; pointer-events:none; }
+  .search { box-sizing:border-box; width:100%; padding:15px 20px 15px 46px; background:rgba(14,14,14,.88); border:1px solid rgba(255,255,255,.1); border-radius:999px; color:#fff; font:500 .9rem 'Poppins',sans-serif; outline:none; text-align:center; }
+  .search::placeholder { color:rgba(255,255,255,.4); }
+  .search:focus { border-color:rgba(255,255,255,.45); }
+  button:focus-visible, .card:focus-visible { outline:2px solid var(--red); outline-offset:2px; }
+
+  .grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; max-width:1400px; margin:0 auto; padding:14px 20px 40px; }
+  .card { content-visibility:auto; contain-intrinsic-size:auto 150px; position:relative; aspect-ratio:1.6; border-radius:16px; overflow:hidden; cursor:pointer; border:1px solid rgba(255,255,255,.1); background:var(--panel); transition:border-color .2s, transform .18s; }
+  .card:hover { border-color:rgba(255,255,255,.6); transform:translateY(-3px); }
+  .card-bg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#262626,#111); color:rgba(255,255,255,.2); font:800 1.9rem 'Inter',sans-serif; letter-spacing:2px; }
+  .card-bg img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .4s ease; }
+  .card-bg img.in { opacity:1; }
+  .card::after { content:''; position:absolute; inset:0; background:rgba(0,0,0,.45); opacity:0; transition:opacity .2s; pointer-events:none; }
+  .card:hover::after { opacity:1; }
+  .card-shade { position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,.85),transparent 50%); }
+  .card-title { z-index:2; position:absolute; left:10px; right:10px; bottom:10px; font-size:.8rem; font-weight:700; line-height:1.25; text-align:center; text-transform:capitalize; text-shadow:0 1px 6px rgba(0,0,0,.9); }
+  .play { z-index:2; position:absolute; top:50%; left:50%; width:54px; height:54px; margin:-27px 0 0 -27px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center; opacity:0; transform:scale(.8); transition:opacity .2s, transform .2s; }
+  .card:hover .play { opacity:1; transform:scale(1); }
+  .play svg { width:26px; height:26px; fill:#000; margin-left:3px; }
+  .fav { position:absolute; top:8px; right:8px; z-index:3; width:30px; height:30px; padding:0; border-radius:50%; background:rgba(0,0,0,.55); border:1px solid rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; transition:opacity .2s; }
+  .card:hover .fav, .card.is-fav .fav, .fav:focus-visible { opacity:1; }
+  .fav svg { width:16px; height:16px; fill:none; stroke:#fff; stroke-width:2; stroke-linejoin:round; }
+  .card.is-fav .fav svg { fill:var(--red); stroke:var(--red); }
+
+  #game-player { position:absolute; inset:0; z-index:999; background:#000; display:none; flex-direction:column; }
+  #game-player iframe { flex:1; border:none; }
+  .gp-bar { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 14px; background:#0e0e0e; border-bottom:1px solid rgba(255,255,255,.14); }
+  .gp-title { font-size:.95rem; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .gp-btns { display:flex; gap:8px; flex-shrink:0; }
+  .gp-btns button { width:38px; height:38px; display:flex; align-items:center; justify-content:center; background:var(--panel2); border:1px solid rgba(255,255,255,.14); border-radius:10px; cursor:pointer; transition:border-color .2s, background .2s; }
+  .gp-btns button:hover { border-color:#fff; background:#2a2a2a; }
+  .gp-btns svg { width:18px; height:18px; fill:none; stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+  #report { align-items:center; justify-content:center; padding:20px; z-index:9600; }
+  .r-game { color:var(--muted); font-size:.85rem; margin-bottom:12px; }
+  #report select, #report textarea { box-sizing:border-box; width:100%; margin-bottom:10px; padding:10px 12px; background:var(--panel); border:1px solid rgba(255,255,255,.2); border-radius:10px; color:#fff; font:inherit; font-size:.9rem; outline:none; resize:vertical; }
+  #report select:focus, #report textarea:focus { border-color:var(--red); }
+  .r-send { box-sizing:border-box; width:100%; padding:11px; background:var(--red); border:none; border-radius:10px; color:#000; font:700 .9rem 'Inter',sans-serif; cursor:pointer; }
+  .r-send:hover { filter:brightness(.85); }
+  .r-status { margin-top:10px; min-height:1.2em; font-size:.8rem; color:rgba(255,255,255,.7); text-align:center; }
+
+  .loader { position:absolute; inset:0; z-index:9800; background:var(--bg); display:none; flex-direction:column; align-items:center; justify-content:center; }
+  .loader.show { display:flex; }
+  .load-logo { width:76px; height:76px; display:flex; align-items:center; justify-content:center; border-radius:18px; background:#1c1c1c; border:1px solid rgba(255,255,255,.2); font:800 1.9rem 'Inter',sans-serif; letter-spacing:2px; }
+  .load-track { position:relative; width:170px; height:14px; margin-top:26px; border-radius:8px; border:2px solid #2a170a; overflow:hidden;
+    background:repeating-linear-gradient(90deg,rgba(0,0,0,.18) 0 2px,transparent 2px 9px),#4a2d16; }
+  .load-fill { position:relative; height:100%; width:0; border-radius:6px; overflow:hidden;
+    background:repeating-linear-gradient(90deg,rgba(90,51,24,.35) 0 1px,transparent 1px 7px),linear-gradient(#e6b97c,#c58a4a 55%,#9c6830); }
+  .load-fill::after { content:''; position:absolute; right:0; top:0; bottom:0; width:10px; border-radius:50%; background:#e8c590; box-shadow:inset 0 0 0 2px #9a6a35, inset 0 0 0 4px #e8c590, inset 0 0 0 5px #9a6a35; }
+  .load-text, .load-subtext { display:none !important; }
+
+  .fall { position:absolute; inset:0; z-index:15; pointer-events:none; overflow:hidden; }
+  .lf { position:absolute; top:0; width:20px; height:20px; opacity:.65; will-change:transform; animation:fall 14s linear infinite; }
+  @keyframes fall {
+    0%   { transform:translate3d(0,-60px,0) rotate(0deg); }
+    50%  { transform:translate3d(var(--dx),55vh,0) rotate(180deg); }
+    100% { transform:translate3d(calc(var(--dx) * -.5),110vh,0) rotate(360deg); }
+  }
+  #app.playing .fall, #app.no-leaves .fall { display:none; }
+
+  @media (max-width:600px) {
+    .top { padding:26px 12px 6px; }
+    .help-btn { width:40px; height:40px; right:12px; top:16px; }
+    .tabs button { padding:8px 20px; }
+    .count { margin:20px 0 14px; font-size:1.2rem; }
+    .grid { grid-template-columns:repeat(2,1fr); padding:10px 12px 30px; }
+    .help { padding-top:110px; }
+  }
+]]></style>
+
+<div class="fall" id="fall" aria-hidden="true"></div>
+
+<div class="page">
+  <header class="top">
+    <button class="help-btn" id="help-btn" aria-label="Settings" title="Settings"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+    <nav class="tabs">
+      <button class="on" data-tab="games">games</button>
+      <button data-tab="apps">apps</button>
+    </nav>
+    <h1 class="count" id="count">loaded 0 games</h1>
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input class="search" id="search" type="text" placeholder="search games..." autocomplete="off" spellcheck="false"/>
+    </div>
+  </header>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="help" id="help">
+  <div class="help-box">
+    <button class="help-x" id="help-x" aria-label="Close">✕</button>
+    <h2>settings</h2>
+
+    <div class="set-row">
+      <div>Games per row<small>Smaller screens show fewer automatically</small></div>
+      <select id="set-cols"><option>3</option><option>4</option><option selected="selected">5</option><option>6</option><option>7</option><option>8</option></select>
+    </div>
+    <div class="set-row">
+      <div>Falling leaves</div>
+      <label class="switch"><input type="checkbox" id="set-leaves" checked="checked"/><span></span></label>
+    </div>
+    <div class="set-row">
+      <div>Show game names</div>
+      <label class="switch"><input type="checkbox" id="set-titles" checked="checked"/><span></span></label>
+    </div>
+
+    <h3>questions</h3>
+    <details>
+      <summary>How to make this into a site?</summary>
+      <ol>
+        <li>You're going to click on the 3 dots on the top right.</li>
+        <li>Then click on bookmarks and lists.</li>
+        <li>After that, click (Bookmark bars) and click always show.</li>
+        <li>Finally, get your extracted Index.html file and drag it onto the bookmarks bar you just turned on.</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>Why aren't the games loading?</summary>
+      <p>Usually it's one of these:</p>
+      <ul>
+        <li>Make sure you extracted the whole file. How? Go to your downloads folder, left click once on MKUBG, and on the top click extract all.</li>
+        <li>Sometimes I mess up so I'm sorry.</li>
+        <li>The game might not be up to date, js lmk if I need to fix a game or 2.</li>
+        <li>If this doesn't help idrc.</li>
+      </ul>
+    </details>
+  </div>
+</div>
+
+<div id="game-player">
+  <div class="gp-bar">
+    <div class="gp-title" id="gp-title"></div>
+    <div class="gp-btns">
+      <button id="gp-reload" title="Reload" aria-label="Reload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></button>
+      <button id="gp-full" title="Fullscreen" aria-label="Fullscreen"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+      <button id="gp-report" title="Report a problem" aria-label="Report a problem"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></button>
+      <button id="gp-close" title="Close" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <iframe id="game-frame" allow="fullscreen"></iframe>
+</div>
+
+<div class="help" id="report">
+  <div class="help-box" style="width:min(420px,100%)">
+    <button class="help-x" id="report-x" aria-label="Close">✕</button>
+    <h2>report a problem</h2>
+    <p class="r-game" id="report-game"></p>
+    <select id="report-type">
+      <option>Game won't load</option>
+      <option>Black or blank screen</option>
+      <option>Stuck on loading</option>
+      <option>Controls don't work</option>
+      <option>No sound</option>
+      <option>Other</option>
+    </select>
+    <textarea id="report-note" rows="3" placeholder="Anything else? (optional)"></textarea>
+    <button class="r-send" id="report-send">Send report</button>
+    <p class="r-status" id="report-status"></p>
+  </div>
+</div>
+
+<div class="loader" id="loader">
+  <div class="load-logo">MK</div>
+  <div class="load-track"><div class="load-fill" id="load-fill"></div></div>
+  <div class="load-text" id="load-text">Please Wait</div>
+  <div class="load-subtext" id="load-subtext">Some Games Take Some Time</div>
+</div>
+
+<script><![CDATA[
+(function () {
+const app = document.getElementById('app');
+const GAME_DIR = 'games/', IMG_DIR = 'images/';
+
+// [title, category, file inside games/, image name inside images/]
+const GAMES = [
+  ["CHAT GPT","other","Chat Bot AI (A.I GPT).html","chatgpt"],
+  ["Movies (working)","other","movies.html","movies"],
+  ["Music (working)","other","Music.html","Music"],
+  ["GOOGLE","other","google.html","google"],
+  ["soundboard","other","Soundboard.html","soundboard"],
+  ["1v1.lol","shooting","1v1.LoL.html","1v1.lol"],
+  ["1v1.lol reloaded","shooting","1v1.LOL RELOADED.html","1v1.lol reloaded"],
+  ["slope","action","Slope.html","slope"],
+  ["run 3","action","Run 3.html","run3"],
+  ["baseball bros","sports","Baseball Bros.html","baseballbros"],
+  ["karate bros","sports","Karate Bros.html","karate bros"],
+  ["football bros","sports","Football Bros.html","footballbros"],
+  ["soccer bros","sports","Soccer Bros.html","soccer bros"],
+  ["basket bros","sports","Basket Bros.html","basketbros"],
+  ["tag","action","Tag.html","tag"],
+  ["10 minutes till dawn","shooting","10 Minutes Till Dawn.html","10minutestilldawn"],
+  ["basket random","sports","Basket Random.html","basketrandom"],
+  ["bitlife","other","LifeBit.html","bitlife"],
+  ["draw joust","action","Draw Joust.html","drawjoust"],
+  ["google baseball","sports","Google Baseball.html","googlebaseball"],
+  ["growden","io","Growden.io.html","growden"],
+  ["raft","action","Raft.html","raft"],
+  ["escape road 2","racing","Escape Road 2.html","escaperoad2"],
+  ["rl 2d","sports","rl2d.html","rl2d"],
+  ["terraria","action","Terraria.html","terraria"],
+  ["fih","sports","Fih.html","fih"],
+  ["basketball stars","sports","Basketball Stars.html","basketballstars"],
+  ["backrooms","horror","Backrooms.html","backrooms"],
+  ["bart blast","action","Bart Blast.html","bartblast"],
+  ["bitplanes","action","BitPlanes.html","bitplanes"],
+  ["bloons td 6","other","Bloons TD.html","bloonstd"],
+  ["boxing random","sports","Boxing Random.html","boxingrandom"],
+  ["brawl guys","action","Brawl Guys.html","brawlguys"],
+  ["brotato","action","Brotato.html","brotato"],
+  ["buckshot roulette","horror","Buckshot Roulette.html","buckshotroulette"],
+  ["buildnow.gg","shooting","BuildNow.gg.html","buildnow"],
+  ["bust a loop","racing","Bust a Loop.html","bustalloop"],
+  ["cat vs roomba","action","Cat vs Roomba.html","catvsroomba"],
+  ["christmas massacre","horror","Christmas Massacre.html","christmasmassacre"],
+  ["cookie clicker","other","Cookie Clicker.html","cookieclicker"],
+  ["sonic.exe","horror","Sonic.EXE (ORIGINAL).html","sonicexe"],
+  ["sort the court","other","Sort the Court.html","sortthecourt"],
+  ["fnf soft","other","Friday Night Funkin Soft.html","fnfsoft"],
+  ["fnf spongebob","other","fnf spongebob.html","fnf spongebob"],
+  ["soccer random","sports","Soccer Random.html","soccerrandom"],
+  ["404 soccer","sports","404 soccer.html","404soccer"],
+  ["steal brainrot online","io","Steal Brainrot Online.html","stealbrainrot"],
+  ["retro bowl","sports","Retro Bowl.html","retrobowl"],
+  ["retro bowl college","sports","Retro Bowl College.html","retrobowlcollege"],
+  ["poly track","racing","Poly Track.html","polytrack"],
+  ["tabs","action","Totally Accurate Battle Simulator (TABS).html","tabs"],
+  ["schoolboy runaway","horror","Schoolboy Runaway.html","schoolboyrunaway"],
+  ["a small world cup","sports","A Small World Cup.html","asmallworldcup"],
+  ["getting over it","action","Getting Over It with Bennett Foddy.html","gettingoverit"],
+  ["kindergarten","horror","Kindergarten.html","kindergarten"],
+  ["kindergarten 2","horror","kindergarten 2.html","kindergarten 2"],
+  ["kindergarten 3","horror","kindergarten 3.html","kindergarten 3"],
+  ["plants vs zombies","other","Plants vs. Zombies GOTY Edition.html","pvzgoty"],
+  ["fortnite battle royale","shooting","Fortzone Battle Royale.html","fortzone"],
+  ["five nights at shreks hotel","horror","Five Nights at Shreks Hotel.html","shrek1"],
+  ["golf classic","sports","Golf Classic.html","Golf"],
+  ["13th floor","horror","13th Floor.html","floor"],
+  ["geometry dash","action","Geometry Dash.html","geometry"],
+  ["12 mini battles","action","12 Mini Battles.html","12"],
+  ["justfall.lol","io","JustFall.lol.html","justfall"],
+  ["lethal company","horror","Lethal Company.html","lethalcompany"],
+  ["evowars.io","io","EvoWars.io.html","evowars"],
+  ["bombfighters","action","Bombfighters.html","bombfighters"],
+  ["bowmasters","action","Bowmasters.html","bowmasters"],
+  ["bitgun.io","io","BitGun.io.html","bitgun"],
+  ["whos your daddy","action","whos your daddy.html","whos ur daddy"],
+  ["lethal ape","action","lethal ape.html","lethal ape"],
+  ["yohohoio","io","yohohoio.html","yohohoho"],
+  ["peak","action","peak.html","peak"],
+  ["how to fish","other","how to fish.html","how to fish"],
+  ["hammer 2 reloaded","action","hammer-2 reloaded.html","hammer 2 reloaded"],
+  ["hill climb racing","racing","hill climb racing.html","hill climb"],
+  ["skate 3","sports","skate 3.html","skate 3"],
+  ["gamble with your friends","other","gamble with-your friends.html","gamble with your friends"],
+  ["castle crashers","action","castle crashers.html","castle crashers"],
+  ["midnight shift","horror","midnight shift.html","midnight"],
+  ["tung sahur horror","horror","tung sahur horror.html","tung sahur"],
+  ["the man from the window","horror","the man from the window.html","the man"],
+  ["fnaf","horror","fnaf.html","fnaf"],
+  ["fnaf 2","horror","fnaf 2.html","fnaf 2"],
+  ["fnaf 3","horror","fnaf 3.html","fnaf 3"],
+  ["fnaf 4","horror","fnaf 4.html","fnaf 4"],
+  ["scary shawarma","horror","scary shawarma.html","scary kiosk"],
+  ["blockpost","shooting","BlockPost.html","block post"],
+  ["snow rider 3d","racing","snow rider 3d.html","snow rider 3d"],
+  ["getaway shootout","shooting","getaway shootout.html","getaway shootout"],
+  ["grand theft auto 3","action","grand theft auto 3.html","gta 3"],
+  ["beeswarm simulator","other","beeswarm simulator.html","bee swarm"],
+  ["survivorio","io","survivorio.html","survivorio"],
+  ["super mario 64","action","super mario 64.html","super mario"],
+  ["super mario kart","action","Super Mario Kart.html","mario kart"],
+  ["super smash bros","action","Super Smash Bros.html","super smash bros"],
+  ["ragdoll archers","action","ragdoll archers.html","ragdoll"],
+  ["wrassling","sports","wrassling.html","wraslling"],
+  ["wheelie bike 2","racing","wheelie bike 2.html","wheelie bike"],
+  ["gun mayhem 2","shooting","gun mayhem 2.html","gun mayhem 2"],
+  ["that's not my neighbor","horror","That's Not My Neighbor.html","thatsnotmyneighbor"],
+  ["gang beasts (WORKING)","action","Gang Beasts.html","gangbeasts"],
+  ["n-gon","action","n gon.html","n gon"],
+  ["dogeminer","action","Doge Miner.html","dogeminer"],
+  ["retro ping pong","action","retro ping pong.html","retro ping pong"],
+  ["Brawl Stars","action","Brawl Stars.html","Brawl Stars"],
+  ["1 on 1 soccer","sports","1 on 1 Soccer.html","1 on 1 soccer"],
+  ["paper.io","io","Paperio.html","paperio"],
+  ["soflo wheelie life","racing","Soflo Wheelie Life.html","soflo"],
+  ["rocket goal.io","sports","Rocket Goal.io.html","rocketgoalio"],
+  ["garten of banban","action","Garten of Banban.html","garten of banban"],
+  ["duck life","action","Duck Life.html","duck life"],
+  ["superhot","action","superhot webport.html","superhot"],
+  ["Minecraft Mods (NEW)","action","MineCraft.html","minecraft"],
+  ["RNG","action","RNG.html","rng"],
+  ["infinite craft","action","Infinite Craft.html","infinite craft"],
+  ["MVP Baseball","action","MVP Baseball.html","mvp baseball"],
+];
+
+const REPORT_EMAIL = '';   // put your email here to have reports open in the email app
+
+/* ---------- element references ---------- */
+const grid = document.getElementById('grid');
+const searchEl = document.getElementById('search'), countEl = document.getElementById('count');
+const player = document.getElementById('game-player'), frame = document.getElementById('game-frame');
+const helpEl = document.getElementById('help');
+const reportEl = document.getElementById('report'), rStatus = document.getElementById('report-status');
+const loader = document.getElementById('loader'), fill = document.getElementById('load-fill');
+const loadSub = document.getElementById('load-subtext');
+const XHTML = 'http://www.w3.org/1999/xhtml', SVGNS = 'http://www.w3.org/2000/svg';
+
+/* ---------- saved favorites / recents ---------- */
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)) || []; } catch (e) { return []; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let favs = store.get('mk_favs'), recents = store.get('mk_recents'), tab = 'games', curFile = '', curTitle = '';
+const APP_FILES = ['Chat Bot AI (A.I GPT).html','movies.html','Music.html','google.html','Soundboard.html'];
+
+/* ---------- images ---------- */
+let EXTS = ['png','jpg','webp'];
+function cardCandidates(base) {
+  const names = [base, base.charAt(0).toUpperCase() + base.slice(1)];
+  return names.flatMap(n => EXTS.map(e => ({ src: IMG_DIR + encodeURIComponent(n) + '.' + e, ext: e })));
+}
+function tryImages(candidates, onFound, onDone) {
+  let i = 0;
+  (function next() {
+    if (i >= candidates.length) { onDone(); return; }
+    const c = candidates[i++], im = document.createElementNS(XHTML, 'img');
+    im.decoding = 'async';
+    im.onload = () => {
+      EXTS = [c.ext].concat(EXTS.filter(x => x !== c.ext));
+      onFound(im); onDone();
+    };
+    im.onerror = next;
+    im.src = c.src;
+  })();
+}
+const imgQueue = []; let imgActive = 0;
+function pumpImages() {
+  while (imgActive < 6 && imgQueue.length) {
+    imgActive++;
+    imgQueue.shift()(() => { imgActive--; pumpImages(); });
+  }
+}
+const loadCard = c => {
+  if (c._loaded) return;
+  c._loaded = true;
+  imgQueue.push(done => tryImages(cardCandidates(c._img), im => {
+    c._bg.textContent = '';
+    c._bg.appendChild(im);
+    requestAnimationFrame(() => im.classList.add('in'));
+  }, done));
+  pumpImages();
+};
+
+/* ---------- loading screen ---------- */
+let gameLoading = false, gameFrameLoaded = false, gameMinDone = false, loadId = 0, gameTimer = null;
+
+function showLoader(sub) {
+  loadSub.style.display = sub ? 'block' : 'none';
+  fill.style.transition = 'none'; fill.style.width = '0%';
+  loader.classList.add('show');
+  void fill.offsetWidth;
+  fill.style.transition = 'width 1.5s ease-out'; fill.style.width = '90%';
+}
+function hideLoader() {
+  fill.style.transition = 'width .15s'; fill.style.width = '100%';
+  setTimeout(() => { if (!gameLoading) loader.classList.remove('show'); }, 160);
+}
+function startGameLoad() {
+  const id = ++loadId;
+  gameLoading = true; gameFrameLoaded = false; gameMinDone = false;
+  showLoader(true);
+  setTimeout(() => { if (id === loadId) { gameMinDone = true; tryFinishGame(); } }, 1500);
+  clearTimeout(gameTimer);
+  gameTimer = setTimeout(() => { if (id === loadId) { gameFrameLoaded = true; tryFinishGame(); } }, 20000);
+}
+function tryFinishGame() {
+  if (!gameLoading || !gameFrameLoaded || !gameMinDone) return;
+  gameLoading = false;
+  clearTimeout(gameTimer);
+  hideLoader();
+}
+frame.addEventListener('load', () => {
+  if (gameLoading && frame.getAttribute('src') === gameUrl(curFile)) {
+    gameFrameLoaded = true;
+    tryFinishGame();
+  }
+});
+
+/* ---------- building the grid ---------- */
+const STAR = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5-4.8-4.6 6.6-.9z"/></svg>';
+const PLAY = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+
+function makeCard([title, cat, file, img], idx) {
+  const card = document.createElementNS(XHTML, 'div');
+  card.className = 'card'; card.tabIndex = 0; card.setAttribute('role', 'button');
+  card.dataset.cat = cat; card.dataset.file = file; card.dataset.title = title.toLowerCase();
+  card.innerHTML = '<div class="card-bg"></div><div class="card-shade"></div><button class="fav" aria-label="Favorite">' + STAR + '</button><div class="play">' + PLAY + '</div><div class="card-title"></div>';
+  card.querySelector('.card-title').textContent = title;
+  card._bg = card.querySelector('.card-bg');
+  card._bg.textContent = title.replace(/[^a-z0-9 ]/gi, '').split(' ').filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase(); card._img = img; card._idx = idx;
+  card.querySelector('.fav').onclick = e => { e.stopPropagation(); toggleFav(file); };
+  card.onclick = () => openGame(file, title);
+  card.onkeydown = e => { if (e.target === card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openGame(file, title); } };
+  return card;
+}
+
+let cards = [];
+const emptyMsg = document.createElementNS(XHTML, 'div');
+emptyMsg.className = 'empty';
+
+function buildGrid() {
+  grid.textContent = '';
+  const frag = document.createDocumentFragment();
+  cards = GAMES.map((g, i) => { const c = makeCard(g, i); frag.appendChild(c); return c; });
+  frag.appendChild(emptyMsg);
+  grid.appendChild(frag);
+
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { io.unobserve(e.target); loadCard(e.target); }
+    }), { root: document.querySelector('.page'), rootMargin: '700px' });
+    cards.forEach(c => io.observe(c));
+  } else cards.forEach(loadCard);
+
+  render();
+}
+
+/* ---------- search, tabs, favorites ---------- */
+function render() {
+  const q = searchEl.value.toLowerCase().trim();
+  const word = tab === 'apps' ? 'apps' : 'games';
+  let shown = 0;
+  cards.forEach(c => {
+    const f = c.dataset.file;
+    c.classList.toggle('is-fav', favs.includes(f));
+    const ok = (APP_FILES.includes(f) === (tab === 'apps')) && c.dataset.title.includes(q);
+    c.style.order = c._idx;
+    c.style.display = ok ? '' : 'none';
+    if (ok) shown++;
+  });
+  countEl.textContent = 'loaded ' + shown + ' ' + word;
+  searchEl.placeholder = 'search ' + word + '...';
+  emptyMsg.textContent = 'NO ' + word.toUpperCase() + ' FOUND';
+  emptyMsg.style.order = 9999;
+  emptyMsg.style.display = shown ? 'none' : 'block';
+}
+function toggleFav(file) {
+  favs = favs.includes(file) ? favs.filter(f => f !== file) : favs.concat(file);
+  store.set('mk_favs', favs); render();
+}
+let searchTimer;
+searchEl.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(render, 120); });
+document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => {
+  tab = b.dataset.tab;
+  document.querySelectorAll('.tabs button').forEach(x => x.classList.toggle('on', x === b));
+  render();
+});
+
+/* ---------- game player ---------- */
+function gameUrl(file) { return GAME_DIR + encodeURIComponent(file); }
+function openGame(file, title) {
+  curFile = file; curTitle = title;
+  recents = [file].concat(recents.filter(f => f !== file)).slice(0, 20);
+  store.set('mk_recents', recents);
+  document.getElementById('gp-title').textContent = title;
+  app.classList.add('playing');
+  startGameLoad();
+  player.style.display = 'flex';
+  frame.src = gameUrl(file);
+  render();
+}
+function closeGame() {
+  loadId++; gameLoading = false; clearTimeout(gameTimer);
+  loader.classList.remove('show');
+  player.style.display = 'none';
+  frame.src = 'about:blank';
+  app.classList.remove('playing');
+}
+document.getElementById('gp-close').onclick = closeGame;
+document.getElementById('gp-reload').onclick = () => { startGameLoad(); frame.src = 'about:blank'; setTimeout(() => { frame.src = gameUrl(curFile); }, 30); };
+document.getElementById('gp-full').onclick = () => {
+  const f = frame.requestFullscreen || frame.webkitRequestFullscreen;
+  if (f) f.call(frame);
+};
+
+/* ---------- report a problem ---------- */
+function openReport() {
+  document.getElementById('report-game').textContent = 'Game: ' + curTitle;
+  document.getElementById('report-note').value = ''; rStatus.textContent = '';
+  reportEl.classList.add('open');
+}
+function closeReport() { reportEl.classList.remove('open'); }
+document.getElementById('gp-report').onclick = openReport;
+document.getElementById('report-x').onclick = closeReport;
+reportEl.addEventListener('click', e => { if (e.target === reportEl) closeReport(); });
+document.getElementById('report-send').onclick = () => {
+  const note = document.getElementById('report-note').value.trim();
+  const text = 'Game: ' + curTitle + ' (' + curFile + ')\nProblem: ' + document.getElementById('report-type').value + (note ? '\nDetails: ' + note : '');
+  if (REPORT_EMAIL) {
+    location.href = 'mailto:' + REPORT_EMAIL + '?subject=' + encodeURIComponent('Problem with ' + curTitle) + '&body=' + encodeURIComponent(text);
+    rStatus.textContent = 'Opening your email app...';
+  } else {
+    if (navigator.clipboard) navigator.clipboard.writeText(text).catch(() => {});
+    rStatus.textContent = 'Report copied. Send it to whoever runs the site.';
+  }
+  setTimeout(closeReport, 2200);
+};
+
+/* ---------- settings ---------- */
+let settings = { cols: 5, leaves: true, titles: true };
+try { Object.assign(settings, JSON.parse(localStorage.getItem('mk_settings')) || {}); } catch (e) {}
+const saveSettings = () => { try { localStorage.setItem('mk_settings', JSON.stringify(settings)); } catch (e) {} };
+function applySettings() {
+  const cap = innerWidth <= 600 ? 2 : innerWidth <= 850 ? 3 : innerWidth <= 1100 ? 4 : 99;
+  grid.style.gridTemplateColumns = 'repeat(' + Math.min(settings.cols, cap) + ',1fr)';
+  app.classList.toggle('no-leaves', !settings.leaves);
+  app.classList.toggle('hide-titles', !settings.titles);
+}
+const setCols = document.getElementById('set-cols'), setLeaves = document.getElementById('set-leaves'), setTitles = document.getElementById('set-titles');
+setCols.value = String(settings.cols); setLeaves.checked = !!settings.leaves; setTitles.checked = !!settings.titles;
+setCols.onchange = () => { settings.cols = +setCols.value; saveSettings(); applySettings(); };
+setLeaves.onchange = () => { settings.leaves = setLeaves.checked; saveSettings(); applySettings(); };
+setTitles.onchange = () => { settings.titles = setTitles.checked; saveSettings(); applySettings(); };
+addEventListener('resize', applySettings);
+applySettings();
+
+/* ---------- help ---------- */
+function openHelp() { helpEl.classList.add('open'); }
+function closeHelp() { helpEl.classList.remove('open'); }
+document.getElementById('help-btn').onclick = () => helpEl.classList.contains('open') ? closeHelp() : openHelp();
+document.getElementById('help-x').onclick = closeHelp;
+helpEl.addEventListener('click', e => { if (e.target === helpEl) closeHelp(); });
+
+addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (reportEl.classList.contains('open')) { closeReport(); return; }
+  if (helpEl.classList.contains('open')) { closeHelp(); return; }
+  if (player.style.display === 'flex') closeGame();
+});
+
+/* ---------- fall decoration (built with real SVG nodes) ---------- */
+const LEAF_COLORS = ['#e8741e','#c2410c','#d97706','#b91c1c','#f59e0b','#92400e','#dc2626'];
+const LEAF_PATH = 'M12 1 L14 6 L18 4 L17 9 L22 8 L19 12 L23 14 L17 15 L18 19 L13 17.5 L13 23 L11 23 L11 17.5 L6 19 L7 15 L1 14 L5 12 L2 8 L7 9 L6 4 L10 6 Z';
+function buildFall() {
+  const box = document.getElementById('fall');
+  box.textContent = '';
+  const n = innerWidth < 600 ? 7 : 13;
+  for (let i = 0; i < n; i++) {
+    const s = 18 + Math.random() * 20;
+    const svg = document.createElementNS(SVGNS, 'svg');
+    svg.setAttribute('class', 'lf');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.style.left = (Math.random() * 100).toFixed(1) + '%';
+    svg.style.width = svg.style.height = s.toFixed(0) + 'px';
+    svg.style.animationDuration = (11 + Math.random() * 10).toFixed(1) + 's';
+    svg.style.animationDelay = '-' + (Math.random() * 20).toFixed(1) + 's';
+    svg.style.setProperty('--dx', (Math.random() * 160 - 80).toFixed(0) + 'px');
+    const leaf = document.createElementNS(SVGNS, 'path');
+    leaf.setAttribute('d', LEAF_PATH);
+    leaf.setAttribute('fill', LEAF_COLORS[Math.floor(Math.random() * LEAF_COLORS.length)]);
+    const vein = document.createElementNS(SVGNS, 'path');
+    vein.setAttribute('d', 'M12 22 V8 M12 14 L8 11 M12 14 L16 11');
+    vein.setAttribute('stroke', 'rgba(0,0,0,.3)');
+    vein.setAttribute('stroke-width', '.7');
+    vein.setAttribute('fill', 'none');
+    svg.appendChild(leaf); svg.appendChild(vein);
+    box.appendChild(svg);
+  }
+}
+
+/* ---------- start ---------- */
+buildGrid();
+buildFall();
+document.addEventListener('visibilitychange', () => { document.getElementById('fall').style.display = document.hidden ? 'none' : ''; });
+showLoader(false);
+setTimeout(() => { if (!gameLoading) hideLoader(); }, 800);
+})();
+]]></script>
+</div>
+</foreignObject>
+</svg>
